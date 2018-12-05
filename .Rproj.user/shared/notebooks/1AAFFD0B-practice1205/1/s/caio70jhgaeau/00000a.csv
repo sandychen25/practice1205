@@ -1,0 +1,33 @@
+"0","libraryData <- read_csv(""https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç¸¹ = col_character(),
+  ®ÑÄyÃş§O = col_character(),
+  ®ÑÄy¦WºÙ = col_character(),
+  ÅªªÌ­É¾\¥U¼Æ = col_double(),
+  ®ÑÄy¥Xª©¤é´Á = col_double(),
+  ®ÑÄyÀ]ÂÃ¦a = col_character(),
+  ®ÑÄy¤W¬[¦~¤ë = col_date(format = """"),
+  ¤J¾Ç¦~ = col_double(),
+  ÅªªÌ¦~¯Å = col_double(),
+  ¾Ç°| = col_character(),
+  ­É¾\®É¶¡ = col_character()
+)
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","libraryData %>%"
+"0","  mutate_at("
+"0","    vars( å­¸é™¢ , æ›¸ç±é¤¨è—åœ° , æ›¸ç±é¡åˆ¥ ),"
+"0","    funs("
+"0","     as.factor(.)"
+"0","    )"
+"0","  ) -> libraryData"
+"2","Error in mutate_at(., vars(å­¸é™¢, æ›¸ç±é¤¨è—åœ°, æ›¸ç±é¡åˆ¥), funs(as.factor(.))) : 
+  could not find function ""mutate_at""
+"

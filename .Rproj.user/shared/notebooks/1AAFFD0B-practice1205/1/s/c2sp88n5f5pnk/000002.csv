@@ -1,0 +1,8 @@
+"0","library(summarytools)"
+"0","libraryData %>%"
+"0","  select_if("
+"0","    is.numeric"
+"0","  ) %>% summarytools::dfSummary() %>% summarytools::view(.)"
+"2","Error in libraryData %>% select_if(is.numeric) %>% summarytools::dfSummary() %>%  : 
+  could not find function ""%>%""
+"
